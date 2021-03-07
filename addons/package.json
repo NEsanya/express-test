@@ -1,0 +1,14 @@
+{
+  "name": "addons",
+  "version": "0.1.0",
+  "description": "Addons for express.js application",
+  "main": "lib/index.js",
+  "author": "nesanya <nesanya1990@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.5.1"
+  },
+  "scripts": {
+    "install": "neon build"
+  }
+}
