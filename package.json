@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Test for NeuroCity",
   "scripts": {
-    "build:dev": "nodemon .",
-    "build:pord": "tsc && node dist/index",
+    "build:dev": "nodemon src/index.ts",
+    "build:prod": "tsc && node dist/index",
     "build:start": "node dist/index",
     "test": "jest"
   },
