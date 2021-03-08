@@ -1,6 +1,4 @@
 var addon = require('../native');
 
-const hash = addon.hash("password")
-
-console.log(hash)
-console.log(addon.verify("password1", hash));
+module.exports.hash = addon.hash
+module.exports.verify = addon.verify

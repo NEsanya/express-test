@@ -8,7 +8,9 @@ const port = process.env.EXPERESS_TEST_PORT || 3500
 app.use(bodyParser.json())
 
 import posts from "./controllers/post"
+import users from "./controllers/user"
 app.use(posts)
+app.use(users)
 
 async function start() {
     try{

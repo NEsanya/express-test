@@ -1,4 +1,4 @@
-import { Document, Schema } from "mongoose"
+import mongoose, { Document, Schema } from "mongoose"
 
 export const PostSchema = new Schema({
     id: Number,
@@ -11,3 +11,5 @@ export interface IPost extends Document {
     title: string,
     body: string
 }
+
+export const PostModel = mongoose.model<IPost>('Post', PostSchema);
